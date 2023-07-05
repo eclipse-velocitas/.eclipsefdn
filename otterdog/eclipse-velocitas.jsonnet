@@ -17,6 +17,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newOrgSecret('GITLAB_API_TOKEN') {
       value: "pass:bots/automotive.velocitas/gitlab.eclipse.org/api-token",
     },
+    orgs.newOrgSecret('VELOCITAS_PROJECT_TOKEN') {
+      value: "pass:bots/automotive.velocitas/github.com/project-token",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {

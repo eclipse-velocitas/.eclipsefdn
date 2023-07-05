@@ -25,8 +25,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -35,12 +37,30 @@ orgs.newOrg('eclipse-velocitas') {
       allow_merge_commit: false,
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
     },
     orgs.newRepo('devcontainer-base-images') {
       allow_merge_commit: false,
       allow_update_branch: false,
       description: "devcontainer base images",
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
     },
     orgs.newRepo('devenv-devcontainer-setup') {
       allow_merge_commit: false,
@@ -48,8 +68,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -60,8 +82,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -72,8 +96,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -84,8 +110,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -96,8 +124,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -108,8 +138,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -120,8 +152,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -134,8 +168,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -148,8 +184,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -161,8 +199,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -175,8 +215,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -189,8 +231,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -204,8 +248,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -217,8 +263,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -231,8 +279,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -245,8 +295,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -260,8 +312,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],
@@ -281,8 +335,10 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
           required_approving_review_count: 1,
-          requires_status_checks: false,
+          requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
       ],

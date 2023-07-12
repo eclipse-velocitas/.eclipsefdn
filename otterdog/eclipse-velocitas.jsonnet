@@ -110,6 +110,7 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-workflows') {
       allow_merge_commit: false,
       allow_update_branch: false,
+      has_discussions: true,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {

@@ -325,6 +325,9 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "Documentation artifacts of Velocitas",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "docs",
+      gh_pages_source_path: "/",
       homepage: "https://eclipse.dev/velocitas",
       web_commit_signoff_required: false,
       branch_protection_rules: [

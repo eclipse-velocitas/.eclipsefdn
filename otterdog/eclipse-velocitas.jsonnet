@@ -117,7 +117,6 @@ orgs.newOrg('eclipse-velocitas') {
       allow_merge_commit: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
-      has_discussions: true,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -324,6 +323,7 @@ orgs.newOrg('eclipse-velocitas') {
       allow_merge_commit: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
+      has_discussions: true,
       description: "Documentation artifacts of Velocitas",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "docs",

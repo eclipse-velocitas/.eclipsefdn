@@ -348,11 +348,11 @@ orgs.newOrg('eclipse-velocitas') {
         },
       ],
     },
-    orgs.newRepo('velocitas-project-generator-npm') {
+    orgs.newRepo('velocitas-lib') {
       allow_merge_commit: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
-      description: "velocitas-project-generator-npm",
+      description: "A Python-based velocitas module which enables development of Velocitas CLI packages.",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -364,11 +364,11 @@ orgs.newOrg('eclipse-velocitas') {
         },
       ],
     },
-    orgs.newRepo('velocitas-lib') {
+    orgs.newRepo('velocitas-project-generator-npm') {
       allow_merge_commit: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
-      description: "A Python-based velocitas module which enables development of Velocitas CLI packages.",
+      description: "velocitas-project-generator-npm",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {

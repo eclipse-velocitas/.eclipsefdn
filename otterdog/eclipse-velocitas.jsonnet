@@ -41,8 +41,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('cli') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -57,8 +57,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devcontainer-base-images') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       description: "devcontainer base images",
       web_commit_signoff_required: false,
       branch_protection_rules: [
@@ -74,8 +74,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-devcontainer-setup') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -90,8 +90,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-integration') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -106,8 +106,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-templates') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -122,8 +122,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-workflows') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -138,8 +138,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtime-k3d') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -154,8 +154,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtime-local') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -170,8 +170,8 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtimes') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -186,9 +186,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('license-check') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "license-check",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -203,9 +203,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('release-documentation-action') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "release-documentation-action",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -220,9 +220,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-cpp-sdk') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "vehicle-app-cpp-sdk",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -237,9 +237,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-cpp-template') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "vehicle-app-cpp-template",
+      has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
       branch_protection_rules: [
@@ -255,9 +255,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-python-sdk') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "vehicle-app-python-sdk",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -272,9 +272,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-python-template') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "vehicle-app-python-template",
+      has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
       branch_protection_rules: [
@@ -290,9 +290,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-model-cpp') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "vehicle-model-cpp",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -307,9 +307,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-model-generator') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "vehicle-model-generator",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -324,9 +324,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-model-python') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "vehicle-model-python",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -341,13 +341,13 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('velocitas-docs') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: true,
       delete_branch_on_merge: true,
       description: "Documentation artifacts of Velocitas",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "docs",
       gh_pages_source_path: "/",
       has_discussions: true,
+      has_wiki: true,
       homepage: "https://eclipse.dev/velocitas",
       web_commit_signoff_required: false,
       branch_protection_rules: [
@@ -370,10 +370,10 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('velocitas-lib') {
       allow_merge_commit: false,
-      has_wiki: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "A Python-based velocitas module which enables development of Velocitas CLI packages.",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -388,9 +388,9 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('velocitas-project-generator-npm') {
       allow_merge_commit: false,
       allow_update_branch: false,
-      has_wiki: false,
       delete_branch_on_merge: true,
       description: "velocitas-project-generator-npm",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {

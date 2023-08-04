@@ -58,8 +58,8 @@ orgs.newOrg('eclipse-velocitas') {
       allow_merge_commit: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
-      has_wiki: false,
       description: "devcontainer base images",
+      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {

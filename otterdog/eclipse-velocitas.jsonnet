@@ -221,6 +221,23 @@ orgs.newOrg('eclipse-velocitas') {
         },
       ],
     },
+    orgs.newRepo('vehicle-app-template') {
+      allow_merge_commit: false,
+      allow_update_branch: false,
+      delete_branch_on_merge: true,
+      description: "vehicle-app-template",
+      is_template: true,
+      web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
     orgs.newRepo('vehicle-app-cpp-template') {
       allow_merge_commit: false,
       allow_update_branch: false,

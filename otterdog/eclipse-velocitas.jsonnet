@@ -4,7 +4,6 @@ orgs.newOrg('eclipse-velocitas') {
   settings+: {
     blog: "https://eclipse.dev/velocitas/",
     default_repository_permission: "none",
-    default_workflow_permissions: "write",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Toolchain for creating containerized in-vehicle applications",
     name: "Eclipse Velocitas",
@@ -12,6 +11,10 @@ orgs.newOrg('eclipse-velocitas') {
     readers_can_create_discussions: true,
     two_factor_requirement: false,
     web_commit_signoff_required: false,
+    workflows+: {
+      actions_can_approve_pull_request_reviews: false,
+      default_workflow_permissions: "write",
+    },
   },
   secrets+: [
     orgs.newOrgSecret('GITLAB_API_TOKEN') {
@@ -221,23 +224,6 @@ orgs.newOrg('eclipse-velocitas') {
         },
       ],
     },
-    orgs.newRepo('vehicle-app-template') {
-      allow_merge_commit: false,
-      allow_update_branch: false,
-      delete_branch_on_merge: true,
-      description: "vehicle-app-template",
-      is_template: true,
-      web_commit_signoff_required: false,
-      branch_protection_rules: [
-        orgs.newBranchProtectionRule('main') {
-          dismisses_stale_reviews: true,
-          require_last_push_approval: true,
-          required_approving_review_count: 1,
-          requires_conversation_resolution: true,
-          requires_strict_status_checks: true,
-        },
-      ],
-    },
     orgs.newRepo('vehicle-app-cpp-template') {
       allow_merge_commit: false,
       allow_update_branch: false,
@@ -276,6 +262,23 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "vehicle-app-python-template",
+      is_template: true,
+      web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
+    orgs.newRepo('vehicle-app-template') {
+      allow_merge_commit: false,
+      allow_update_branch: false,
+      delete_branch_on_merge: true,
+      description: "vehicle-app-template",
       is_template: true,
       web_commit_signoff_required: false,
       branch_protection_rules: [

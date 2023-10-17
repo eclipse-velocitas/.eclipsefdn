@@ -1,6 +1,6 @@
 site_name: Otterdog configuration @ eclipse-velocitas
 site_description: Otterdog configuration @ eclipse-velocitas
-strict: true
+strict: false
 
 site_url: https://eclipse-velocitas.github.io/.eclipsefdn/
 

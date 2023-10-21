@@ -4,6 +4,9 @@ strict: false
 
 site_url: https://eclipse-velocitas.github.io/.eclipsefdn/
 
+repo_name: eclipse-velocitas/.eclipsefdn
+repo_url: https://github.com/eclipse-velocitas/.eclipsefdn/
+
 docs_dir: ./docs
 site_dir: ./_site
 

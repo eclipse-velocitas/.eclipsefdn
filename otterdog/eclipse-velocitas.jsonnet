@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-velocitas') {
   settings+: {
     blog: "https://eclipse.dev/velocitas/",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Toolchain for creating containerized in-vehicle applications",
     name: "Eclipse Velocitas",
@@ -28,6 +27,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('.github') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -41,6 +44,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('cli') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -55,6 +62,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "devcontainer base images",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -68,6 +79,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-devcontainer-setup') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -81,6 +96,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-integration') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -94,6 +113,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-templates') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -107,6 +130,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-workflows') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -120,6 +147,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtime-k3d') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -133,6 +164,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtime-local') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -146,6 +181,10 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtimes') {
       allow_update_branch: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -160,6 +199,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "license-check",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -174,6 +217,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "release-documentation-action",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -188,6 +235,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "vehicle-app-cpp-sdk",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -203,6 +254,10 @@ orgs.newOrg('eclipse-velocitas') {
       description: "vehicle-app-cpp-template",
       is_template: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -217,6 +272,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "vehicle-app-python-sdk",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -232,6 +291,10 @@ orgs.newOrg('eclipse-velocitas') {
       description: "vehicle-app-python-template",
       is_template: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -247,6 +310,10 @@ orgs.newOrg('eclipse-velocitas') {
       description: "vehicle-app-template",
       is_template: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -261,6 +328,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "vehicle-model-cpp",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -275,6 +346,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "vehicle-model-generator",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -289,6 +364,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "vehicle-model-python",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -308,6 +387,10 @@ orgs.newOrg('eclipse-velocitas') {
       has_discussions: true,
       homepage: "https://eclipse.dev/velocitas",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -330,6 +413,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "A Python-based velocitas module which enables development of Velocitas CLI packages.",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
@@ -344,6 +431,10 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       description: "velocitas-project-generator-npm",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,

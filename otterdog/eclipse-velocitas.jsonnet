@@ -90,6 +90,7 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-integration') {
       allow_merge_commit: false,
       allow_update_branch: false,
+      archived: true,
       delete_branch_on_merge: true,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -138,6 +139,7 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtime-k3d') {
       allow_merge_commit: false,
       allow_update_branch: false,
+      archived: false,
       delete_branch_on_merge: true,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -154,6 +156,7 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtime-local') {
       allow_merge_commit: false,
       allow_update_branch: false,
+      archived: true,
       delete_branch_on_merge: true,
       has_wiki: false,
       web_commit_signoff_required: false,

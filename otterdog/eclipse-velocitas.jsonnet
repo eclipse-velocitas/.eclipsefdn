@@ -312,7 +312,6 @@ orgs.newOrg('eclipse-velocitas') {
       delete_branch_on_merge: true,
       description: "vehicle-app-python-sdk",
       has_wiki: false,
-      is_template: true,
       web_commit_signoff_required: false,
       workflows+: {
         actions_can_approve_pull_request_reviews: false,

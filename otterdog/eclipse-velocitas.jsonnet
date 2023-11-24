@@ -27,6 +27,7 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('.github') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
+      description: ".github"
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
@@ -65,6 +66,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('devcontainer-base-images') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "devcontainer base images",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -227,6 +229,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('license-check') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "license-check",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -246,6 +249,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('release-documentation-action') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "release-documentation-action",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -265,6 +269,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('vehicle-app-cpp-sdk') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "vehicle-app-cpp-sdk",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -284,6 +289,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('vehicle-app-cpp-template') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "vehicle-app-cpp-template",
       is_template: true,
       web_commit_signoff_required: false,
@@ -366,6 +372,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('vehicle-model-cpp') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "vehicle-model-cpp",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -385,6 +392,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('vehicle-model-generator') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "vehicle-model-generator",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -404,6 +412,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('vehicle-model-python') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "vehicle-model-python",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -423,6 +432,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('velocitas-docs') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "Documentation artifacts of Velocitas",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "docs",
@@ -455,6 +465,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('velocitas-lib') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "A Python-based velocitas module which enables development of Velocitas CLI packages.",
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -474,6 +485,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('velocitas-project-generator-npm') {
       allow_update_branch: false,
+      delete_branch_on_merge: true,
       description: "velocitas-project-generator-npm",
       has_wiki: false,
       web_commit_signoff_required: false,

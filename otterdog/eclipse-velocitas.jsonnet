@@ -167,7 +167,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('devenv-runtime-k3d') {
       allow_update_branch: false,
-      archived: false,
+      archived: true,
       delete_branch_on_merge: true,
       description: "devenv-runtime-k3d",
       has_wiki: false,

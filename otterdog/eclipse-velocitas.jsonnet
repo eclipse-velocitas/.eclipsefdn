@@ -27,7 +27,7 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('.github') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
-      description: ".github"
+      description: ".github",
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {

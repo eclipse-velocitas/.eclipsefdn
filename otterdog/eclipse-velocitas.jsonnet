@@ -291,6 +291,7 @@ orgs.newOrg('eclipse-velocitas') {
       allow_update_branch: false,
       delete_branch_on_merge: true,
       description: "vehicle-app-cpp-template",
+      has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
       workflows+: {

@@ -504,11 +504,14 @@ orgs.newOrg('eclipse-velocitas') {
       ],
     },
     orgs.newRepo('pkg-velocitas-main') {
-      allow_merge_commit: false,
       allow_update_branch: false,
       delete_branch_on_merge: true,
-      description: "Velocitas toolchain package which provides the main entry-point for the Velocitas modular toolchain.",
+      has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,

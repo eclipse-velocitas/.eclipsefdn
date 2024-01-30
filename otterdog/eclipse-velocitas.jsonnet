@@ -510,7 +510,7 @@ orgs.newOrg('eclipse-velocitas') {
       web_commit_signoff_required: false,
       workflows+: {
         actions_can_approve_pull_request_reviews: false,
-        default_workflow_permissions: "write",
+        default_workflow_permissions: "read",
       },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {

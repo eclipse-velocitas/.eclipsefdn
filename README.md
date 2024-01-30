@@ -1,7 +1,7 @@
-# .eclipsefdn
+# Eclipse Foundation Config Repo
 
 Repository to host configurations related to the Eclipse Foundation.
 
-## Self service of GitHub organizations
+## Self service of your GitHub organization
 
-Documentation for using the self-service (stored in directory *otterdog*) can be accessed at [otterdog.readthedocs.io](https://otterdog.readthedocs.io).
+You can find more information at <https://eclipse-velocitas.github.io/.eclipsefdn/>.

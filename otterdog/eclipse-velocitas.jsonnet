@@ -380,5 +380,21 @@ orgs.newOrg('eclipse-velocitas') {
         },
       ],
     },
+    orgs.newRepo('pkg-velocitas-main') {
+      allow_merge_commit: false,
+      allow_update_branch: false,
+      delete_branch_on_merge: true,
+      description: "Velocitas toolchain package which provides the main entry-point for the Velocitas modular toolchain.",
+      web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
   ],
 }

@@ -521,5 +521,24 @@ orgs.newOrg('eclipse-velocitas') {
         },
       ],
     },
+    orgs.newRepo('pkg-velocitas-uprotocol') {
+      allow_update_branch: false,
+      delete_branch_on_merge: true,
+      has_wiki: false,
+      web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "read",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
   ],
 }

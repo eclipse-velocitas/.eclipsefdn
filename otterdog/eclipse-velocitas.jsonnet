@@ -282,7 +282,7 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('vehicle-app-cpp-template') {
       allow_update_branch: false,
-      description: "vehicle-app-cpp-template",
+      description: "Vehicle App template for C++",
       has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
@@ -319,7 +319,26 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('vehicle-app-python-template') {
       allow_update_branch: false,
-      description: "vehicle-app-python-template",
+      description: "Vehicle App template for Python",
+      has_wiki: false,
+      is_template: true,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
+    orgs.newRepo('vehicle-app-kotlin-template') {
+      allow_update_branch: false,
+      description: "Vehicle App template for Kotlin",
       has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,

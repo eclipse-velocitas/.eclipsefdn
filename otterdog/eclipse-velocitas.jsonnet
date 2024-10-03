@@ -23,7 +23,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('.github') {
       allow_update_branch: false,
       description: ".github",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -41,7 +40,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('cli') {
       allow_update_branch: false,
       description: "Velocitas CLI",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -59,7 +57,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devcontainer-base-images') {
       allow_update_branch: false,
       description: "devcontainer base images",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -77,7 +74,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-devcontainer-setup') {
       allow_update_branch: false,
       description: "devenv-devcontainer-setup",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -112,7 +108,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-templates') {
       allow_update_branch: false,
       description: "devenv-github-templates",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -130,7 +125,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-github-workflows') {
       allow_update_branch: false,
       description: "devenv-github-workflows",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -182,7 +176,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('devenv-runtimes') {
       allow_update_branch: false,
       description: "devenv-runtimes",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -200,7 +193,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('license-check') {
       allow_update_branch: false,
       description: "license-check",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -217,7 +209,6 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('pkg-velocitas-main') {
       allow_update_branch: false,
-      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -231,7 +222,6 @@ orgs.newOrg('eclipse-velocitas') {
     },
     orgs.newRepo('pkg-velocitas-uprotocol') {
       allow_update_branch: false,
-      has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -246,7 +236,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('release-documentation-action') {
       allow_update_branch: false,
       description: "release-documentation-action",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -264,7 +253,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-cpp-sdk') {
       allow_update_branch: false,
       description: "vehicle-app-cpp-sdk",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -282,7 +270,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-cpp-template') {
       allow_update_branch: false,
       description: "Vehicle App template for C++",
-      has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -301,7 +288,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-kotlin-template') {
       allow_update_branch: false,
       description: "Vehicle App template for Kotlin",
-      has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -320,7 +306,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-python-sdk') {
       allow_update_branch: false,
       description: "vehicle-app-python-sdk",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -341,7 +326,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-python-template') {
       allow_update_branch: false,
       description: "Vehicle App template for Python",
-      has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -360,7 +344,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-app-template') {
       allow_update_branch: false,
       description: "vehicle-app-template",
-      has_wiki: false,
       is_template: true,
       web_commit_signoff_required: false,
       workflows+: {
@@ -379,7 +362,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-model-cpp') {
       allow_update_branch: false,
       description: "vehicle-model-cpp",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -397,7 +379,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-model-generator') {
       allow_update_branch: false,
       description: "vehicle-model-generator",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -415,7 +396,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('vehicle-model-python') {
       allow_update_branch: false,
       description: "vehicle-model-python",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -463,7 +443,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('velocitas-lib') {
       allow_update_branch: false,
       description: "A Python-based velocitas module which enables development of Velocitas CLI packages.",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -484,7 +463,6 @@ orgs.newOrg('eclipse-velocitas') {
     orgs.newRepo('velocitas-project-generator-npm') {
       allow_update_branch: false,
       description: "velocitas-project-generator-npm",
-      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",

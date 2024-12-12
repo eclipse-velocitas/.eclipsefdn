@@ -317,9 +317,9 @@ orgs.newOrg('eclipse-velocitas') {
         },
       ],
     },
-    orgs.newRepo('vehicle-app-kotlin-sdk') {
+    orgs.newRepo('vehicle-app-java-sdk') {
       allow_update_branch: false,
-      description: "Vehicle App sdk for Kotlin",
+      description: "Vehicle App sdk for Java",
       has_wiki: false,
       is_template: false,
       web_commit_signoff_required: false,

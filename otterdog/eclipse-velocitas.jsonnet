@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-velocitas') {
+orgs.newOrg('automotive.velocitas', 'eclipse-velocitas') {
   settings+: {
     blog: "https://eclipse.dev/velocitas/",
     description: "Toolchain for creating containerized in-vehicle applications",

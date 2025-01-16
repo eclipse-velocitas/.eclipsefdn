@@ -18,6 +18,24 @@ orgs.newOrg('automotive.velocitas', 'eclipse-velocitas') {
     orgs.newOrgSecret('VELOCITAS_PROJECT_TOKEN') {
       value: "pass:bots/automotive.velocitas/github.com/project-token",
     },
+     orgs.newOrgSecret('GPG_KEY_ID') {
+      value: 'pass:bots/automotive.velocitas/gpg/key_id',
+    },
+    orgs.newOrgSecret('GPG_SUBKEY_ID') {
+      value: 'pass:bots/automotive.velocitas/gpg/subkey_id',
+    },
+    orgs.newOrgSecret('GPG_PASSPHRASE') {
+      value: 'pass:bots/automotive.velocitas/gpg/passphrase',
+    },
+    orgs.newOrgSecret('GPG_PRIVATE_KEY') {
+      value: 'pass:bots/automotive.velocitas/gpg/secret-subkeys.asc',
+    },
+    orgs.newOrgSecret('OSSRH_PASSWORD') {
+      value: 'pass:bots/automotive.velocitas/oss.sonatype.org/gh-token-password',
+    },
+    orgs.newOrgSecret('OSSRH_USERNAME') {
+      value: 'pass:bots/automotive.velocitas/oss.sonatype.org/gh-token-username',
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {

@@ -316,6 +316,25 @@ orgs.newOrg('automotive.velocitas', 'eclipse-velocitas') {
         },
       ],
     },
+     orgs.newRepo('vehicle-app-rust-sdk') {
+      allow_update_branch: false,
+      description: "Vehicle App sdk for Rust",
+      has_wiki: false,
+      is_template: false,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          require_last_push_approval: true,
+          required_approving_review_count: 1,
+          requires_conversation_resolution: true,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
     orgs.newRepo('vehicle-app-kotlin-template') {
       allow_update_branch: false,
       description: "Vehicle App template for Kotlin",

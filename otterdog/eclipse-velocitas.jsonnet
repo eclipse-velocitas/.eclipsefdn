@@ -30,11 +30,11 @@ orgs.newOrg('automotive.velocitas', 'eclipse-velocitas') {
     orgs.newOrgSecret('GPG_PRIVATE_KEY') {
       value: 'pass:bots/automotive.velocitas/gpg/secret-subkeys.asc',
     },
-    orgs.newOrgSecret('OSSRH_PASSWORD') {
-      value: 'pass:bots/automotive.velocitas/oss.sonatype.org/gh-token-password',
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: 'pass:bots/automotive.velocitas/central.sonatype.org/token-password',
     },
-    orgs.newOrgSecret('OSSRH_USERNAME') {
-      value: 'pass:bots/automotive.velocitas/oss.sonatype.org/gh-token-username',
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: 'pass:bots/automotive.velocitas/central.sonatype.org/token-username',
     },
   ],
   _repositories+:: [
@@ -466,6 +466,9 @@ orgs.newOrg('automotive.velocitas', 'eclipse-velocitas') {
           requires_conversation_resolution: true,
           requires_strict_status_checks: true,
         },
+      ],
+      environments: [
+        orgs.newEnvironment('pypi'),
       ],
     },
     orgs.newRepo('vehicle-model-python') {
